@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wajd Alshareef</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 5px;
+    }
+    a { color:#38bdf8; }
+  </style>
+</head>
+<body>
 
+<header>
+  <h1 id="name">Wajd Fahad Alshareef</h1>
+  <p id="title">Finance Student | Risk Management Background</p>
+  <button onclick="toggleLang()">🌐 تغيير اللغة</button>
+</header>
+
+<section>
+  <h2 id="about-title">About Me</h2>
+  <p id="about-text">
+    With a solid foundation in Insurance and Risk Management, earned through a diploma from Imam Abdulrahman Bin Faisal University, I am currently pursuing a Bachelor’s degree in Finance at the Saudi Electronic University. Alongside my academic journey, I work part-time at Ithra (King Abdulaziz Center for World Culture), where I continue to develop both professionally and personally.
+  </p>
+</section>
+
+<section>
+  <h2 id="skills-title">Skills</h2>
+  <ul id="skills-list">
+    <li>Risk Management</li>
+    <li>Workshop Facilitation</li>
+    <li>Team Leadership</li>
+    <li>Project Management</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="exp-title">Experience</h2>
+  <ul id="exp-list">
+    <li>Finance Intern – Eastern Province Municipality</li>
+    <li>Insurance Intern – Al Mana Hospital</li>
+    <li>Play Guide (Volunteer) – Children’s Museum</li>
+    <li>Facilitator (Part-time) – Ithra</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="contact-title">Contact</h2>
+  <p id="contact-text">
+    Phone: 0554814096 <br>
+    Email: wajddals@gmail.com <br>
+    LinkedIn: <a href="https://www.linkedin.com/in/wajd-f-alshareef-021b94262" target="_blank">Profile</a>
+  </p>
+</section>
+
+<script>
+let isArabic = false;
+
+function toggleLang() {
+  isArabic = !isArabic;
+
+  if (isArabic) {
+    document.documentElement.lang = "ar";
+    document.body.style.direction = "rtl";
+
+    document.getElementById("title").innerText = "طالبة مالية | خلفية في إدارة المخاطر";
+    document.getElementById("about-title").innerText = "نبذة عني";
+    document.getElementById("about-text").innerText =
+      "أمتلك أساسًا قويًا في التأمين وإدارة المخاطر من خلال دبلوم من جامعة الإمام عبدالرحمن بن فيصل، وأدرس حاليًا بكالوريوس في المالية في الجامعة السعودية الإلكترونية. بالإضافة إلى دراستي، أعمل بدوام جزئي في إثراء، حيث أواصل تطوير مهاراتي على الصعيدين المهني والشخصي.";
+
+    document.getElementById("skills-title").innerText = "المهارات";
+    document.getElementById("skills-list").innerHTML =
+      "<li>إدارة المخاطر</li><li>تقديم ورش العمل</li><li>قيادة الفرق</li><li>إدارة المشاريع</li>";
+
+    document.getElementById("exp-title").innerText = "الخبرات";
+    document.getElementById("exp-list").innerHTML =
+      "<li>متدربة مالية – أمانة المنطقة الشرقية</li><li>متدربة تأمين – مستشفى المانع</li><li>مرشدة أطفال (تطوع) – متحف الطفل</li><li>مقدمة برامج (دوام جزئي) – إثراء</li>";
+
+    document.getElementById("contact-title").innerText = "التواصل";
+  } else {
+    location.reload();
+  }
+}
+</script>
+
+</body>
+</htm
